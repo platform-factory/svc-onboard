@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: svc-onboard
+  namespace: svc-onboard
+  labels:
+    app.kubernetes.io/name: svc-onboard
+spec:
+  selector:
+    app.kubernetes.io/name: svc-onboard
+  ports:
+    - name: http
+      port: 80
+      targetPort: http
