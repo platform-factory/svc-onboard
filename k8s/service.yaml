@@ -2,7 +2,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: svc-onboard
-  namespace: svc-scratch
+  namespace: svc-onboard
   labels:
     app.kubernetes.io/name: svc-onboard
 spec:
