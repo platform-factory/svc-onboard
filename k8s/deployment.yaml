@@ -5,7 +5,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: svc-onboard
-  namespace: svc-onboard
+  namespace: svc-scratch
   labels:
     app.kubernetes.io/name: svc-onboard
 spec:
@@ -18,7 +18,7 @@ spec:
       labels:
         app.kubernetes.io/name: svc-onboard
     spec:
-      serviceAccountName: svc-onboard
+      serviceAccountName: svc-scratch
       automountServiceAccountToken: false
       securityContext:
         runAsNonRoot: true
